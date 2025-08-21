@@ -211,6 +211,32 @@ a.btn {
   }
 }
 
+/* Improve colors & spacing on mobile */
+@media (max-width: 720px) {
+  body {
+    background:
+      radial-gradient(800px 400px at 20% 10%, #123b66 0%, transparent 60%),
+      radial-gradient(700px 350px at 90% 90%, #0d2d50 0%, transparent 60%),
+      linear-gradient(160deg, #123456, #0e223a);
+  }
+
+  .card {
+    margin-bottom: 2rem; /* space at bottom */
+  }
+
+  .wrap {
+    padding-bottom: 2rem; /* prevent footer touching edge */
+  }
+
+  .lead {
+    color: #f0f4fa; /* brighten text on mobile */
+  }
+
+  .btn--ghost {
+    border-color: rgba(255, 255, 255, 0.25); 
+    color: #ffffff; /* brighter for readability */
+  }
+}
 
 
   </style>
